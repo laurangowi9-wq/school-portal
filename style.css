@@ -11,16 +11,32 @@ body {
     justify-content: center;
     align-items: center;
     color: #333;
+    padding: 20px;
 }
 
 .container {
     width: 100%;
-    max-width: 420px;
-    padding: 20px;
+    max-width: 480px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: #fff;
+    margin: 0;
+    font-size: 24px;
 }
 
 .card {
-    background: #ffffff;
+    background: rgba(255,255,255,0.95);
     border-radius: 16px;
     padding: 30px 25px;
     box-shadow: 0 15px 40px rgba(0,0,0,0.25);
@@ -28,14 +44,9 @@ body {
     animation: fadeIn 1s ease;
 }
 
-h1 {
-    margin-bottom: 5px;
-    color: #1d2671;
-}
-
 .subtitle {
     color: #666;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     font-size: 14px;
 }
 
@@ -78,6 +89,39 @@ button:hover {
     background: #f4f6fb;
     font-size: 15px;
     display: none;
+    text-align: left;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #1d2671;
+    color: white;
+}
+
+.grade-A {
+    color: green;
+    font-weight: bold;
+}
+
+.grade-B {
+    color: orange;
+    font-weight: bold;
+}
+
+.grade-C {
+    color: red;
+    font-weight: bold;
 }
 
 footer {
@@ -90,4 +134,15 @@ footer {
 @keyframes fadeIn {
     from {opacity: 0; transform: translateY(20px);}
     to {opacity: 1; transform: translateY(0);}
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .card {
+        padding: 20px 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
 }
