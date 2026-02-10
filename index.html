@@ -1,18 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Class Portal Login</title>
+    <meta charset="UTF-8">
+    <title>School Results Portal</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h2>Student Login</h2>
+<div class="container">
+    <div class="card">
+        <h1>🏫 School Results Portal</h1>
+        <p class="subtitle">Login to view your academic results</p>
 
-<input type="text" id="username" placeholder="Enter Username"><br>
-<input type="password" id="password" placeholder="Enter Password"><br>
-<button onclick="login()">Login</button>
+        <input type="text" id="username" placeholder="Student Username">
+        <input type="password" id="password" placeholder="Password">
 
-<div id="result"></div>
+        <button onclick="login()">Login</button>
+
+        <div id="result"></div>
+    </div>
+
+    <footer>
+        © 2026 Your School Name • All Rights Reserved
+    </footer>
+</div>
 
 <script src="script.js"></script>
 </body>
